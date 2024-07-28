@@ -38,7 +38,7 @@
           get(ref(Database,USER)).then((snapshot)=>{
             if(snapshot){
               alert('Updated Successfuly (•‿•)');
-              window.location.href='./msf/index.html';
+              window.location.href='./MSF/index.html';
             }
           });
         }
@@ -56,7 +56,7 @@
         
         get(ref(Database,USER)).then((snapshot)=>{
           if(snapshot){
-            window.location.href='./msf/index.html';
+            window.location.href='./MSF/index.html';
           }
         });
         
@@ -64,7 +64,7 @@
     }
   }else{
     if(!localStorage.getItem('USER')){
-      window.location.href='./msf/login.html';
+      window.location.href='./MSF/login.html';
     }
     var i=1;
     onChildAdded(ref(Database),(snapshot)=>{
