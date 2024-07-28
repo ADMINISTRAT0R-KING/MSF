@@ -16,7 +16,7 @@
   }
   
   body{
-    background: url("/0.jpeg") no-repeat fixed center;
+    background: url("./0.jpeg") no-repeat fixed center;
     background-size: 100vw;
   }
   
