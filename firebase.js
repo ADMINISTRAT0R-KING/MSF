@@ -38,7 +38,7 @@
           get(ref(Database,USER)).then((snapshot)=>{
             if(snapshot){
               alert('Updated Successfuly (•‿•)');
-              window.location.href='/MSF/index.html';
+              //window.location.href='/MSF/index.html';
             }
           });
         }
@@ -56,7 +56,7 @@
         
         get(ref(Database,USER)).then((snapshot)=>{
           if(snapshot){
-            window.location.href='/MSF/index.html';
+            //window.location.href='/MSF/index.html';
           }
         });
         
