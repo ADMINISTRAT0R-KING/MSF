@@ -38,7 +38,7 @@
           get(ref(Database,USER)).then((snapshot)=>{
             if(snapshot){
               alert('Updated Successfuly (•‿•)');
-              window.location.href='../index.html';
+              window.location.href='https://administrat0r-king.github.io/MSF/index.html';
             }
           });
         }
@@ -56,7 +56,7 @@
         
         get(ref(Database,USER)).then((snapshot)=>{
           if(snapshot){
-            window.location.href='../index.html';
+            window.location.href='https://github.com/administrat0r-king/MSF/index.html';
           }
         });
         
@@ -64,7 +64,7 @@
     }
   }else{
     if(!localStorage.getItem('USER')){
-      window.location.href='../login.html';
+      window.location.href='https://github.com/administrat0r-king/MSF/login.html';
     }
     var i=1;
     onChildAdded(ref(Database),(snapshot)=>{
