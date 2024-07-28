@@ -64,7 +64,7 @@
     }
   }else{
     if(!localStorage.getItem('USER')){
-      window.location.href='/MSF/login.html';
+      //window.location.href='/MSF/login.html';
     }
     var i=1;
     onChildAdded(ref(Database),(snapshot)=>{
