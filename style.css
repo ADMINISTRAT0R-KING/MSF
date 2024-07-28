@@ -1,0 +1,129 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    user-zoom: none;
+  }
+  body,html{
+    min-width: 100dvw;
+    min-height: 100dvh;
+    z-index: 1;
+    
+    color: #000;
+    font-family: sans-serif;
+    overflow: hidden;
+  }
+  
+  body{
+    background: url("/0.jpeg") no-repeat fixed center;
+    background-size: 100vw;
+  }
+  
+  #home_main_nav_body{
+    width: 100vw;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    border-bottom: 1px solid #000;
+    display: flex;
+    align-items: center;
+    background: #eee;
+    z-index: 1;
+  }
+  #website_title{
+    position: absolute;
+    left: 10px;
+  }
+  #self_user_settings{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+    padding: 3px;
+  }
+  #self_user_settings:hover{
+    background: #00000022;
+    border-radius: 20%;
+  }
+  
+  #container,#container_list{
+    width: 100vw;
+    height: calc(100dvh - 60px);
+    position: absolute;
+    top: 50px;
+    z-index: 0;
+    
+    overflow: scroll;
+    white-space: nowrap;
+  }
+  
+  #nav_info,member{
+    min-width: 850px;
+    height: 30px;
+    background: #00000022;
+    display: flex;
+    overflow: scroll;
+  }
+  #list_no,#list_name,#list_post,#list_mobile_no{
+    height: 100%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    border: 1px solid #000;
+    background: transparent;
+  }
+  #list_no{
+    width: 50px;
+  }
+  #list_name{
+    width: 350px;
+  }
+  #list_post{
+    width: 200px;
+  }
+  #list_mobile_no{
+    width: 250px;
+  }
+  
+  member{
+    background: transparent;
+  }
+  
+  
+  #form_newuser{
+    width: 100vw;
+    height: calc(100dvh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    
+  }
+  
+  #form_newuser > input{
+    width: 80vw;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid #000;
+    font-size: 111%;
+    font-weight: bold;
+    padding: 0 10px;
+    margin-bottom: 1vw;
+  }
+  
+  #form_newuser > input::placeholder{
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+  }
+  #form_newuser > input[type="submit"]{
+    background: #eee;
+  }

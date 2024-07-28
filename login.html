@@ -1,0 +1,41 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>HOME</title>
+    <!-- BROWSER CONFIG -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=off,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="HandheldFriendly" content="true" />
+    <!-- BROWSER THEME & ICON-->
+    <meta name="theme-color" content="#fff">
+    <link rel="shortcut icon" type="image/x-icon" href="/0.jpeg">
+    <!-- FILE CONFIG -->
+    <link rel="stylesheet" href="/style.css">
+    <script src="/main.js" defer></script>
+    
+    <script type="module" src="/firebase.js"></script>
+  </head>
+  <body>
+    <!-- MAIN BODY -->
+    <main id="home_main_body">
+      <nav id="home_main_nav_body">
+        <h3 id="website_title">
+          Add yourself to MSF list
+        </h3>
+        <button id="self_user_settings" onclick="setTimeout(()=>{window.location.href='/index.html'},300)">
+          <img src="/home.svg">
+        </button>
+      </nav>
+      <div id="container">
+        <form id="form_newuser" onsubmit="return;">
+          <input id="inp_username" type="text" required placeholder="User Name" minlength="10" max="100">
+          <input id="inp_tel" type="tel" required placeholder="Mobile No" minlength="10" maxlength="10">
+          <input id="inp_userpost" type="text" required placeholder="Your Post" minlength="2" maxlength="10">
+          <input id="inp_submit" type="submit" value="SUBMIT">
+        </form>
+      </div>
+    </main>
+  </body>
+  </html>
