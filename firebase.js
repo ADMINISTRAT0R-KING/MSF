@@ -16,7 +16,7 @@
   const app=initializeApp(firebaseConfig);
   const Database=getDatabase();
   
-  if(location.pathname==='./MSF/login.html'){
+  if(location.pathname==='/MSF/login.html'){
     if(localStorage.getItem('USER')){
       var USER=localStorage.getItem('USER');
       confirm('Alredy Logged in as:- '+USER);
